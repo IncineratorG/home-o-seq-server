@@ -9,25 +9,25 @@ import com.touristskaya.homeoseqserver.services.surveillance.SurveillanceService
 import com.touristskaya.homeoseqserver.services.surveillance.SurveillanceServiceState;
 
 public class SurveillanceStore extends Store {
-    private SurveillanceState mSurveillanceState;
-    private SurveillanceActionsFactory mSurveillanceActionsFactory;
+    private SurveillanceState mState;
+    private SurveillanceActionsFactory mActionsFactory;
     private SurveillanceService mSurveillanceService;
 
 
     public SurveillanceStore() {
-        mSurveillanceState = new SurveillanceState();
-        mSurveillanceActionsFactory = new SurveillanceActionsFactory();
+        mState = new SurveillanceState();
+        mActionsFactory = new SurveillanceActionsFactory();
         mSurveillanceService = (SurveillanceService) Services.getInstance().getService(Services.SurveillanceService);
     }
 
     @Override
     public State getState() {
-        return mSurveillanceState;
+        return mState;
     }
 
     @Override
     public ActionsFactory getActionFactory() {
-        return mSurveillanceActionsFactory;
+        return mActionsFactory;
     }
 
     @Override
@@ -68,7 +68,7 @@ public class SurveillanceStore extends Store {
         SurveillanceServiceState state = (SurveillanceServiceState) mSurveillanceService.getState();
 
         state.stateString.subscribe(() -> {
-            mSurveillanceState.serviceStateString.set(state.stateString.get());
+            mState.serviceStateString.set(state.stateString.get());
         });
     }
 }
