@@ -6,10 +6,12 @@ import com.touristskaya.homeoseqserver.stores.common.State;
 
 public class CommunicationService implements TransmissionService {
     private FirebaseCommunicationService mFirebaseCommunicationService;
+    private CommunicationServiceState mCommunicationServiceState;
 
 
     public CommunicationService() {
-        mFirebaseCommunicationService = new FirebaseCommunicationService();
+        mCommunicationServiceState = new CommunicationServiceState();
+        mFirebaseCommunicationService = new FirebaseCommunicationService(mCommunicationServiceState);
     }
 
     @Override
