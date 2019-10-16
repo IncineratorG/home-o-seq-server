@@ -4,9 +4,9 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.touristskaya.homeoseqlib.redux.State;
 import com.touristskaya.homeoseqserver.services.communication.CommunicationServiceState;
 import com.touristskaya.homeoseqserver.services.communication.common.TransmissionService;
-import com.touristskaya.homeoseqserver.stores.common.State;
 
 public class FirebaseCommunicationService implements TransmissionService {
     private static String mFirebaseUrl = "https://surveillance-136a9.firebaseio.com/";

@@ -1,10 +1,10 @@
 package com.touristskaya.homeoseqserver.stores.surveillance;
 
+import com.touristskaya.homeoseqlib.redux.Action;
+import com.touristskaya.homeoseqlib.redux.ActionsFactory;
+import com.touristskaya.homeoseqlib.redux.State;
+import com.touristskaya.homeoseqlib.redux.Store;
 import com.touristskaya.homeoseqserver.services.Services;
-import com.touristskaya.homeoseqserver.stores.common.Action;
-import com.touristskaya.homeoseqserver.stores.common.ActionsFactory;
-import com.touristskaya.homeoseqserver.stores.common.State;
-import com.touristskaya.homeoseqserver.stores.common.Store;
 import com.touristskaya.homeoseqserver.services.surveillance.SurveillanceService;
 import com.touristskaya.homeoseqserver.services.surveillance.SurveillanceServiceState;
 

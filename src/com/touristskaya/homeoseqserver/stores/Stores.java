@@ -1,6 +1,6 @@
 package com.touristskaya.homeoseqserver.stores;
 
-import com.touristskaya.homeoseqserver.stores.common.Store;
+import com.touristskaya.homeoseqlib.redux.Store;
 import com.touristskaya.homeoseqserver.stores.surveillance.SurveillanceStore;
 
 public class Stores {

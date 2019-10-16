@@ -1,8 +1,8 @@
 package com.touristskaya.homeoseqserver.services.communication;
 
+import com.touristskaya.homeoseqlib.redux.State;
 import com.touristskaya.homeoseqserver.services.communication.common.TransmissionService;
 import com.touristskaya.homeoseqserver.services.communication.firebase.FirebaseCommunicationService;
-import com.touristskaya.homeoseqserver.stores.common.State;
 
 public class CommunicationService implements TransmissionService {
     private FirebaseCommunicationService mFirebaseCommunicationService;

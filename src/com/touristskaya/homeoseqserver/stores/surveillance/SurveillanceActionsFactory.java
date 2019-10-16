@@ -1,7 +1,7 @@
 package com.touristskaya.homeoseqserver.stores.surveillance;
 
-import com.touristskaya.homeoseqserver.stores.common.Action;
-import com.touristskaya.homeoseqserver.stores.common.ActionsFactory;
+import com.touristskaya.homeoseqlib.redux.Action;
+import com.touristskaya.homeoseqlib.redux.ActionsFactory;
 import com.touristskaya.homeoseqserver.stores.surveillance.actions.BindSurveillanceServiceStateAction;
 import com.touristskaya.homeoseqserver.stores.surveillance.actions.StartSurveillanceServiceAction;
 import com.touristskaya.homeoseqserver.stores.surveillance.actions.StopSurveillanceServiceAction;

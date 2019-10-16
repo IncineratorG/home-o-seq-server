@@ -1,7 +1,7 @@
 package com.touristskaya.homeoseqserver.services.surveillance;
 
+import com.touristskaya.homeoseqlib.redux.State;
 import com.touristskaya.homeoseqserver.services.common.DaemonService;
-import com.touristskaya.homeoseqserver.stores.common.State;
 
 public class SurveillanceService implements DaemonService {
     private String CLASS_NAME = "SurveillanceService";

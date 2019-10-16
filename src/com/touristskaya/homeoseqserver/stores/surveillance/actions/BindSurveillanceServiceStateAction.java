@@ -1,6 +1,6 @@
 package com.touristskaya.homeoseqserver.stores.surveillance.actions;
 
-import com.touristskaya.homeoseqserver.stores.common.Action;
+import com.touristskaya.homeoseqlib.redux.Action;
 import com.touristskaya.homeoseqserver.stores.surveillance.SurveillanceActionsFactory;
 
 public class BindSurveillanceServiceStateAction implements Action {

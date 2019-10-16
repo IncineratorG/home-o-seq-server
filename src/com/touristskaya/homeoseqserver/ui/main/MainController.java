@@ -1,8 +1,11 @@
 package com.touristskaya.homeoseqserver.ui.main;
 
+import com.sun.xml.internal.ws.developer.Serialization;
+import com.touristskaya.homeoseqlib.redux.Action;
+import com.touristskaya.homeoseqlib.states.server.ServerCommunicationState;
+import com.touristskaya.homeoseqserver.common.SerializationHelper;
 import com.touristskaya.homeoseqserver.services.Services;
 import com.touristskaya.homeoseqserver.services.communication.CommunicationService;
-import com.touristskaya.homeoseqserver.stores.common.Action;
 import com.touristskaya.homeoseqserver.services.surveillance.SurveillanceService;
 import com.touristskaya.homeoseqserver.stores.Stores;
 import com.touristskaya.homeoseqserver.stores.surveillance.SurveillanceActionsFactory;
@@ -53,8 +56,15 @@ public class MainController implements Initializable {
         mSurveillanceStore.dispatch(bindSurveillanceServiceStateAction);
 
         mSurveillanceState.serviceStateString.subscribe(() -> {
+            ServerCommunicationState serverCommunicationState = new ServerCommunicationState();
+            serverCommunicationState.serverState.set("NEW_STATE");
+            serverCommunicationState.timestamp.set(System.currentTimeMillis());
+
+            String serializedState = SerializationHelper.objectToString(serverCommunicationState);
+
+
             CommunicationService communicationService = (CommunicationService) Services.getInstance().getService(Services.CommunicationService);
-            communicationService.sendSerializedString(mSurveillanceState.serviceStateString.get());
+            communicationService.sendSerializedString(serializedState);
         });
     }
 }
