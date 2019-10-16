@@ -17,5 +17,6 @@
     <orderEntry type="library" name="jackson-databind-2.2.2" level="project" />
     <orderEntry type="library" name="tubesock-0.0.12" level="project" />
     <orderEntry type="library" name="test-lib" level="project" />
+    <orderEntry type="library" name="home-o-seq-lib" level="project" />
   </component>
 </module>

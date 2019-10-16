@@ -4,6 +4,16 @@
     <root id="archive" name="home-o-seq-server.jar">
       <element id="module-output" name="home-o-seq-server" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/firebase-client-jvm-2.5.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/commons-codec-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/home-o-seq/home-o-seq-lib.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/httpclient-4.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/httpcore-4.0.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="jackson-annotations-2.2.2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/jackson-core-2.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/jackson-databind-2.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/firebase/test-lib.jar" path-in-jar="/" />
+      <element id="library" level="project" name="tubesock-0.0.12" />
     </root>
   </artifact>
 </component>

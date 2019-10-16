@@ -1,6 +1,5 @@
 package com.touristskaya.homeoseqserver.ui.main;
 
-import com.firebase.client.Firebase;
 import com.touristskaya.homeoseqserver.services.Services;
 import com.touristskaya.homeoseqserver.services.communication.CommunicationService;
 import com.touristskaya.homeoseqserver.stores.common.Action;
